@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Meu jogo Python</title>
+  <meta charset="UTF-8" />
+  <title>PyArcade ⚡</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>🎮 Meu jogo está vivo!</h1>
-  <p>GitHub Pages funcionando.</p>
+
+  <div class="game">
+    <h1>🎮 PyArcade</h1>
+    <p id="question">Carregando...</p>
+
+    <div class="buttons">
+      <button onclick="answer(true)">True</button>
+      <button onclick="answer(false)">False</button>
+    </div>
+
+    <p id="feedback"></p>
+    <p class="xp">XP: <span id="xp">0</span></p>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
